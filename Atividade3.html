@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade3</title>
+</head>
+<body>
+
+    <script>
+
+        var numero1 = parseInt(prompt('Digite um número de 10 a 99: '))
+        var numero2 = parseInt(prompt('Digite outro número de 10 a 99: '))
+
+        function resultado (num1, num2) {
+            
+            var digito1 = String(Math.floor(num1 / 10));
+            var digito2 = String(num2 % 10)
+
+            return digito1 + digito2
+        }
+        
+        alert(resultado(numero1, numero2))
+
+    </script>
+    
+</body>
+</html>

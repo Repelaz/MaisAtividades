@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade4</title>
+</head>
+<body>
+
+    <script>
+
+        var numero1 = parseFloat (prompt ('Digite a primeira nota: '));
+        var numero2 = parseFloat (prompt ('Digite a segunda nota: ')); 
+        var numero3 = parseFloat (prompt ('Digite a terceira nota: '));
+        var calculo = prompt ('Digite como deve ser calculado (A / P): ').toUpperCase();
+
+        function resultado (num1, num2, num3, calculo) {
+            
+            if (calculo == 'A') {
+               var resultado = (num1 + num2 + num3) / 3
+            } else {
+                resultado = ((num1 * 5) + (num2 * 3) + (num3 * 2)) / 10
+            }
+
+            return resultado
+        }
+        
+        alert(resultado(numero1, numero2, numero3, calculo))
+
+    </script>
+    
+</body>
+</html>

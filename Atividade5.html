@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade5</title>
+</head>
+<body>
+
+    <script>
+
+        var numero1 = parseFloat (prompt ('Digite o primeiro número: '));
+        var numero2 = parseFloat (prompt ('Digite o segundo número: ')); 
+        var calculo = prompt ('Digite como deve ser calculado (+, -, /, *): ').toUpperCase();
+
+        function conta (num1, num2, calculo) {
+            
+            if (calculo == '+') {
+                resultado = num1 + num2
+            } 
+            else if (calculo == '-') {
+                resultado = num1 - num2
+            }
+            else if (calculo == '/') {
+                resultado = num1 / num2
+            } else {
+                resultado = num1 * num2
+            }
+
+            return resultado
+        }
+        
+        alert(conta(numero1, numero2, calculo))
+
+    </script>
+    
+</body>
+</html>
