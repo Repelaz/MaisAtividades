@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade14</title>
+</head>
+
+<body>
+
+    <script>
+
+        let A = parseFloat (prompt ('Informe o valor de A: '))
+        let B = parseFloat (prompt ('Inmforme o valor de B: '))
+        let C = parseFloat (prompt ('Informe o valor de C: '))
+
+        function bhaskaraSoma(num1, num2, num3) {
+
+            let delta = (num2 ** 2) - (4 * (num1 * num3))
+
+            if (delta < 0) {
+                return 'A equacao nao possui raizes reais!'
+            }
+
+            let resultadoDelta = delta ** 0.5
+            let denominador = 2 * num1
+            let soma = -num2 + resultadoDelta
+            let X = soma / denominador
+
+            return X
+        }
+
+        function bhaskaraSub(num1, num2, num3) {
+
+            let delta = (num2 ** 2) - (4 * (num1 * num3))
+
+            if (delta < 0) {
+                return 'A equacao nao possui raizes reais!'
+            }
+
+            let resultadoDelta = delta ** 0.5
+            let denominador = 2 * num1
+            let soma = -num2 - resultadoDelta
+            let X = soma / denominador
+
+            return X
+        }
+
+        alert (bhaskaraSoma(A, B, C))
+
+        alert (bhaskaraSub(A, B, C))
+
+    </script>
+
+</body>
+
+</html>
